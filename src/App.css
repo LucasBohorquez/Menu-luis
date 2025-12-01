@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.platos{
+  @apply flex flex-wrap flex-col items-start justify-between w-full my-3 sm:flex-row sm:items-center gap-2 shadow-xl/20 shadow-gray-600 p-4 cursor-pointer
+}
+.info{
+  @apply flex flex-col flex-wrap my-3 items-start sm:flex-row sm:items-center gap-5 
+}
+.GranMenu{
+  @apply flex flex-col gap-5 p-3
+}
+.menu{
+  @apply p-5 shadow-lg/100 flex flex-col flex-wrap
+}
+.boton{
+  @apply border-1 p-2 rounded-2xl w-32 flex-none cursor-pointer
+}
+#botones{
+  @apply flex gap-5 overflow-x-auto p-5
+}
+.boton:hover{
+  @apply bg-gray-800
+}
+.boton:focus, .boton:focus-visible{
+@apply bg-black border-black
+}
+.imagenes{
+  @apply w-38 h-28 
+}
