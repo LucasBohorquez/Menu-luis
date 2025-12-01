@@ -50,22 +50,17 @@ hamburguesas:[{
 ]
 }]
 
-const ocultarP = () =>{setRender("perros")}
-const ocultarB = () =>{setRender("burger")}
-const ocultarPi = () =>{setRender("picadas")}
-const todos = () =>{setRender("todos")}
-
   return (
   <>
 
   <div id="botones">
-    <button onClick={ocultarP} className='boton'>Perros</button>
-    <button onClick={ocultarB} className='boton'>Hamburguesas</button>
-    <button onClick={ocultarPi} className='boton'>Picadas</button>
-    <button onClick={ocultarP} className='boton'>Perros</button>
-    <button onClick={ocultarB} className='boton'>Hamburguesas</button>
-    <button onClick={ocultarPi} className='boton'>Picadas</button>
-    <button onClick={todos} className='boton'>Ver Todos</button>
+    <button onClick={() =>{setRender("perros")}} className='boton'>Perros</button>
+    <button onClick={() =>{setRender("burger")}} className='boton'>Hamburguesas</button>
+    <button onClick={() =>{setRender("picadas")}} className='boton'>Picadas</button>
+    <button onClick={() =>{setRender("perros")}} className='boton'>Perros</button>
+    <button onClick={() =>{setRender("burger")}} className='boton'>Hamburguesas</button>
+    <button onClick={() =>{setRender("picadas")}} className='boton'>Picadas</button>
+    <button onClick={() =>{setRender("todos")}} className='boton'>Ver Todos</button>
   </div>
 <div className='GranMenu'>
 {(render === "perros" || render === "todos") && (
